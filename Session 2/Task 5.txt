@@ -1,0 +1,18 @@
+XML Configuration
+
+<bean id="paymentGateway" class="com.jatin.PaymentGateway">
+</bean>
+
+<bean id="orderService" class="com.jatin.OrderService">
+
+    <property name="paymentGateway" ref="paymentGateway">
+    </property>
+
+</bean>
+
+
+Review:
+
+This XML uses setter injection because it uses the `<property>` tag. 
+The `PaymentGateway` object is injected into `OrderService` using the `paymentGateway` setter method. 
+The `ref` connects the `OrderService` dependency with the `PaymentGateway` bean. So the configuration is correct for setter injection.

@@ -1,0 +1,4 @@
+IoC means Spring manages the objects and their dependencies instead of creating them manually.
+DI helps us provide the required dependency to a class from outside. In our code, Spring injects `SongRepository` 
+into `PlaylistService` using the constructor, so both classes are separate and easy to change.
+It also makes testing easier because we can provide a different `SongRepository` object while testing `PlaylistService`.

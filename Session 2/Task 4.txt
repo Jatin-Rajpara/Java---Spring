@@ -1,0 +1,15 @@
+Constructor Injection:
+
+<bean id="movieService" class="com.jatin.MovieService">
+    <constructor-arg ref="movieRepository"></constructor-arg>
+</bean>
+
+
+Setter Injection:
+
+<bean id="movieService" class="com.jatin.MovieService">
+    <property name="movieRepository" ref="movieRepository"></property>
+</bean>
+
+--> The given configuration uses constructor injection because it uses <constructor-arg>. 
+    I changed it to setter injection by using the <property> tag.
