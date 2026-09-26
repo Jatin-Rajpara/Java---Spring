@@ -1,0 +1,8 @@
+USE studentdb;
+
+CREATE TABLE restaurants (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    cuisine VARCHAR(100),
+    rating DOUBLE
+);
