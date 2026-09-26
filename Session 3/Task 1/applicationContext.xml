@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="playlist" class="com.jatin.Playlist">
+        <property name="name" value="My Favorite Songs"></property>
+    </bean>
+
+    <bean id="song" class="com.jatin.Song">
+        <property name="title" value="Kesariya"></property>
+        <property name="artist" value="Arijit Singh"></property>
+    </bean>
+
+</beans>
