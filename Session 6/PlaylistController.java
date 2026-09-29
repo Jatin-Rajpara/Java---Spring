@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PlaylistController {
 
-    @GetMapping("/addSong")
+    @GetMapping("/addSong.action")
     public String addSong() {
         return "addSong";
     }
