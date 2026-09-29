@@ -1,0 +1,7 @@
+Open STS / Spring Tools for Eclipse
+File  > New > Maven Project
+Select Create a simple project
+Enter:
+Group Id: com.instaclone
+Artifact Id: InstaCloneSpringDemo
+Packaging: jar
