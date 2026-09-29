@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class PlaylistController {
 
-    @GetMapping("/addSong")
+    @GetMapping("/addSong.action")
     public String showadd(ModelMap model) {
 
         addCommonData(model);
@@ -17,7 +17,7 @@ public class PlaylistController {
         return "addSong";
     }
 
-    @PostMapping("/save")
+    @PostMapping("/save.action")
     public String saveSong(
             @RequestParam("songName") String songName,
             @RequestParam("artist") String artist,
